@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.js"></script>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./Style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>My Profile</title>
+</head>
+<body>
+    <header>
+<nav class="navbar navbar-expand-md container">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#home"><img src="images/Logo_without_background-removebg-preview.png"alt=""></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item">
+    <a class="nav-link"   href="index.html">Home</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link " href="allcourses.html">All courses</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link " href="categories.html">Categories</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="About.html">About us</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link " href="contact.html">Contact us</a>
+</li>
+</ul>
+        <form class="d-md-flex" role="search" style="margin-right: 100px;">
+<div class="search-box d-flex align-items-center">
+    <input class="form-control  " type="search" placeholder="Search courses ....."aria-label="Search" />
+    <i> <img src="images/Home images/Container.svg" alt=""></i>
+</div>
+<div class="d-flex gap-3">
+    <button class="login w-50 w-md-100" type="button" style="margin-left: 20px;" id="login">login</button>
+    <button class="sign-up w-md-100 " type="button" style="width: 120px" id="sign-up">sign up</button>
+</div>
+        </form>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+        </nav>
+</header>
+<!-- ! Header -->
+    <div class="main container-fluid">
+        <div class="row">
+            <div class="leftside col-lg-3">
+                <div class="info">
+                    <div class="image">
+                        <img src="Sources2/Image (Jamie Rivera).png" alt="photo">
+                    </div>
+                    <div class="personinfo">
+                        <p>Frontend Developer · Student</p>
+                        <p>Passionate about building beautiful interfaces and learning something new every day.</p>
+                    </div>
+                    <div class="links">
+                        <div class="location">
+                            <div class="locationimg">
+                                <img src="Sources2/location.svg" alt="">
+                            </div>
+                            <div class="locationtext">
+                                <p>San Francisco</p>
+                            </div>
+                        </div>
+                        <div class="email">
+                            <div class="emailimg">
+                                <img src="Sources2/email.svg" alt="">
+                            </div>
+                            <div class="emailtext">
+                                <p>jamie@email.com</p>
+                            </div>
+                        </div>
+                        <div class="calender">
+                            <div class="calenderimg">
+                                <img src="Sources2/calender.svg" alt="">
+                            </div>
+                            <div class="calendertext">
+                                <p>Joined 03/2024</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <button>React</button>
+                    <button>Typescript</button>
+                    <button>Figma</button>
+                    <button>Pytho</button>
+                    <button>CSS</button>
+                    <button>Node.JS</button>
+                    <button>UX design</button>
+                </div>
+                <div class="sign">
+                    <div>
+                        <button>
+                            <a href="#overview"> Sign Out
+                                <img src="Sources2/sign.svg" alt="">
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="rightside col-lg-9">
+                <div class="header">
+                    <header class="container-fluid">
+                        <nav class="studnav">
+                            <button id="one" class="activ"><a href="#mycourses">My Courses</a></button>
+                            <button id="two" class="activ"><a href="#mycertificates">Certificates</a></button>
+                        </nav>
+                    </header>
+                </div>
+                <div class="analysis gy-2 row">
+                    <div class="one col-6 col-md-3">
+                        <div class="iconone">
+                            <img src="Sources2/book.svg" alt="">
+                        </div>
+                        <div class="onetext">
+                            <h2>12</h2>
+                            <p>Courses Enrolled</p>
+                        </div>
+                    </div>
+                    <div class="two col-6 col-md-3">
+                        <div class="icontwo">
+                            <img src="Sources2/complete.svg" alt="">
+                        </div>
+                        <div class="twotext">
+                            <h2>7</h2>
+                            <p>Completed</p>
+                        </div>
+                    </div>
+                    <div class="three col-6 col-md-3">
+                        <div class="iconthree">
+                            <img src="Sources2/time.svg" alt="">
+                        </div>
+                        <div class="threetext">
+                            <h2>148</h2>
+                            <p>Hours Learned</p>
+                        </div>
+                    </div>
+                    <div class="four col-6 col-md-3">
+                        <div class="iconfour">
+                            <img src="Sources2/certificate.svg" alt="">
+                        </div>
+                        <div class="fourtext">
+                            <h2>4</h2>
+                            <p>Certificates</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- !MY Courses -->
+                <div class="mycourses" id="mycourses">
+                    <div class="active">
+                        <div class="activetext">
+                            <p>My Courses</p>
+                        </div>
+                        <div class="activebtn">
+                            <button>View all
+                                <img src="Sources2/icon right.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="courses">
+                    <div class="course1 container-fluid">
+                        <div class="course1img">
+                            <img src="Sources2/Image (Advanced React & TypeScript).png" class="img-fluid" alt="">
+                        </div>
+                        <div class="course1desc">
+                            <div class="frontend">
+                                <div class="frontbtn">
+                                    <button>Frontend</button>
+                                </div>
+                                <div class="fronticon">
+                                    <img src="Sources2/1.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="course1text">
+                                <h6>Advanced React & TypeScript</h6>
+                                <p>Dr. Sarah Milner</p>
+                            </div>
+                            <div class="course1progress">
+                                <div class="progress1">
+                                    <div class="progress-fill1"></div>
+                                </div>
+                                <div class="progresstext1">
+                                    <p>35/48 lessons</p>
+                                    <p id="p1">72%</p>
+                                </div>
+                            </div>
+                            <div class="course1time">
+                                <div class="timer">
+                                    <div class="timericon">
+                                        <img src="Sources2/time1.svg" alt="">
+                                    </div>
+                                    <div class="timertext">
+                                        <p>2 hours ago</p>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="rateicon">
+                                        <img src="Sources2/star.svg" alt="">
+                                    </div>
+                                    <div class="ratetext">
+                                        <p>4.9</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course2 container-fluid">
+                        <div class="course2img">
+                            <img src="Sources2/Image (UX Design Fundamentals).png" class="img-fluid" alt="">
+                        </div>
+                        <div class="course2desc">
+                            <div class="uxdesign">
+                                <div class="uxbtn">
+                                    <button>Design</button>
+                                </div>
+                                <div class="uxicon">
+                                    <img src="Sources2/2.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="course2text">
+                                <h6>UX Design Fundamentals</h6>
+                                <p>Marcus Chen</p>
+                            </div>
+                            <div class="course2progress">
+                                <div class="progress2">
+                                    <div class="progress-fill2"></div>
+                                </div>
+                                <div class="progresstext2">
+                                    <p>16/36 lessons</p>
+                                    <p id="p1">45%</p>
+                                </div>
+                            </div>
+                            <div class="course2time">
+                                <div class="timer">
+                                    <div class="timericon">
+                                        <img src="Sources2/time1.svg" alt="">
+                                    </div>
+                                    <div class="timertext">
+                                        <p>Yesterday</p>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="rateicon">
+                                        <img src="Sources2/star.svg" alt="">
+                                    </div>
+                                    <div class="ratetext">
+                                        <p>4.7</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="course3 container-fluid">
+                        <div class="course3img">
+                            <img src="Sources2/Image (Python for Data Science).png" class="img-fluid" alt="">
+                        </div>
+                        <div class="course3desc">
+                            <div class="datascience">
+                                <div class="databtn">
+                                    <button>Data Science</button>
+                                </div>
+                                <div class="dataicon">
+                                    <img src="Sources2/3.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="course3text">
+                                <h6>Python for Data Science</h6>
+                                <p>Dr. Aisha Patel</p>
+                            </div>
+                            <div class="course3progress">
+                                <div class="progress3">
+                                    <div class="progress-fill3"></div>
+                                </div>
+                                <div class="progresstext3">
+                                    <p>49/54 lessons</p>
+                                    <p id="p1">91%</p>
+                                </div>
+                            </div>
+                            <div class="course3time">
+                                <div class="timer">
+                                    <div class="timericon">
+                                        <img src="Sources2/time1.svg" alt="">
+                                    </div>
+                                    <div class="timertext">
+                                        <p>3 days ago</p>
+                                    </div>
+                                </div>
+                                <div class="rate">
+                                    <div class="rateicon">
+                                        <img src="Sources2/star.svg" alt="">
+                                    </div>
+                                    <div class="ratetext">
+                                        <p>4.8</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- ! My certificates -->
+                <h2 id="cert">My Certificates</h2>
+                <div class="mycertificates" id="mycertificates">
+                    <div class="certificates row">
+                        <div class="cert1 col-md-6">
+                            <div class="cert1img">
+                                <img src="Sources2/certificate.png" alt="">
+                            </div>
+                            <div class="cert1desc">
+                                <div class="nodejs">
+                                    <div class="nodejstext">
+                                        <h6>Node.js & REST APIs</h6>
+                                        <p>James Okafor</p>
+                                    </div>
+                                    <div class="nodejsbtn">
+                                        <button>Backend</button>
+                                    </div>
+                                </div>
+                                <div class="date">
+                                    <div class="timer">
+                                        <div class="timericon">
+                                        <img src="Sources2/time1.svg" alt="">
+                                        </div>
+                                        <div class="timertext">
+                                            <p>20h 45m</p>
+                                        </div>
+                                    </div>
+                                    <div class="timer">
+                                        <div class="timericon">
+                                        <img src="Sources2/calender.svg" alt="">
+                                        </div>
+                                        <div class="timertext">
+                                            <p>NOV 28,2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cert1btn">
+                                <button class="downbtn">
+                                    <img src="Sources2/download.svg" alt="">
+                                    Download PDF
+                                </button>
+                                <button class="sharebtn">
+                                    <img src="Sources2/share.svg" alt="">
+                                    Share
+                                </button>
+                            </div>
+                        </div>
+                        <div class="cert1 col-md-6">
+                            <div class="cert1img">
+                                <img src="Sources2/certificate.png" alt="">
+                            </div>
+                            <div class="cert1desc">
+                                <div class="nodejs">
+                                    <div class="nodejstext">
+                                        <h6>Node.js & REST APIs</h6>
+                                        <p>James Okafor</p>
+                                    </div>
+                                    <div class="nodejsbtn">
+                                        <button>Backend</button>
+                                    </div>
+                                </div>
+                                <div class="date">
+                                    <div class="timer">
+                                        <div class="timericon">
+                                        <img src="Sources2/time1.svg" alt="">
+                                        </div>
+                                        <div class="timertext">
+                                            <p>20h 45m</p>
+                                        </div>
+                                    </div>
+                                    <div class="timer">
+                                        <div class="timericon">
+                                        <img src="Sources2/calender.svg" alt="">
+                                        </div>
+                                        <div class="timertext">
+                                            <p>NOV 28,2024</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cert1btn">
+                                <button class="downbtn">
+                                    <img src="Sources2/download.svg" alt="">
+                                    Download PDF
+                                </button>
+                                <button class="sharebtn">
+                                    <img src="Sources2/share.svg" alt="">
+                                    Share
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.js"></script>
+    <!-- <scrip src="./Contact.js"></script> -->
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./Contact.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Contact Us|Learnova</title>
+</head>
+<script src="./Contact.js"></script>
+<body>
+<header>
+<nav class="navbar navbar-expand-md container">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#home"><img src="images/Logo_without_background-removebg-preview.png"alt=""></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+<li class="nav-item">
+    <a class="nav-link"   href="index.html">Home</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link " href="allcourses.html">All courses</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link " href="categories.html">Categories</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link" href="About.html">About us</a>
+</li>
+<li class="nav-item">
+    <a class="nav-link active"aria-current="page" href="contact.html">Contact us</a>
+</li>
+</ul>
+        <form class="d-md-flex" role="search" style="margin-right: 100px;">
+<div class="search-box d-flex align-items-center">
+    <input class="form-control  " type="search" placeholder="Search courses ....."aria-label="Search" />
+    <i> <img src="images/Home images/Container.svg" alt=""></i>
+</div>
+<div class="d-flex gap-3">
+    <button class="login w-50 w-md-100" type="button" style="margin-left: 20px;" id="login">login</button>
+    <button class="sign-up w-md-100 " type="button" style="width: 120px" id="sign-up">sign up</button>
+</div>
+        </form>
+    </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+        aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</div>
+        </nav>
+        </header>
+
+        <div class="getintouch container-fluid">
+            <div class="herobutton">
+                <button>GET IN TOUCH</button>
+            </div>
+            <div class="herotext">
+                <h1>We're here to help you grow.</h1>
+                <p>Have a question about our courses or need technical support? Our team is ready to provide the guidance you need.</p>
+            </div>
+        </div>
+
+        <div class="container-fluid row">
+            <div class="send col-lg-6">
+            <div class="messages row">
+                <div class="sendtext">
+                <h2>Send us a message</h2>
+            </div>
+                <div class="fullemail row">
+                    <div class="mb-3 col-md-6">
+                        <label for="fullname" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="fullname" placeholder="John Doe">
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label for="email" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="John@example.com">
+                    </div>
+                </div>
+                <div class="submes row">
+                    <div class="sub">
+                        <label for="subject" class="form-label">Subject</label>
+                        <select class="mb-3 form-select" aria-label="Default select example">
+                            <option selected>Couse Enrollment</option>
+                            <option value="1">Technical Support</option>
+                            <option value="2">Bussiness Partnerships</option>
+                            <option value="3">Other Inquiry</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="textarea" rows="3" placeholder="Tell us how we can help..."></textarea>
+                    </div>
+                    <div class="sendbutton">
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                            <img src="Sources/send.svg" alt="Send">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" mariam col-lg-6">
+            <div class="contactus container">
+            <div class="contactinfo">
+                <div class="contacttext">
+                    <h3>Contact Information</h3>
+                </div>
+                <div class="links">
+                    <div class="one">
+                        <div class="emailicon">
+                            <img src="Sources/Icon1.svg" alt="Email Icon">
+                        </div>
+                        <div class="emailtext">
+                            <p class="em">Email Us</p>
+                            <h5>support@eduflow.edu</h5>
+                            <p>Response within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="two">
+                        <div class="phoneicon">
+                            <img src="Sources/Icon.svg" alt="Phone Icon">
+                        </div>
+                        <div class="phonetext">
+                            <p>Call Us</p>
+                            <h5>+1 (555) 000-8888</h5>
+                            <p>Mon-Fri, 9am-5pm EST</p>
+                        </div>
+                    </div>
+                    <div class="three">
+                        <div class="locationicon">
+                            <img src="Sources/Icon3.svg" alt="Location Icon">
+                        </div>
+                        <div class="locationtext">
+                            <p>Visit Office</p>
+                            <h5>123 Education Plaza</h5>
+                            <p>San Francisco, CA 94103</p>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            </div>
+            <div class="map" data-aos="zoom-in">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3486.771895189546!2d31.09989937530664!3d29.082884775421906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145a2614b4ef4be7%3A0x44c89eb7a44623ae!2sBeni-Suef%20University!5e0!3m2!1sen!2seg!4v1783786830470!5m2!1sen!2seg" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <div class="map-card">
+                    <div>
+                        <h4>Main Headquarters</h4>
+                        <p>Learnova location</p>
+                    </div>
+                    <div class="location-btn">
+                        <img src="Sources/map icon.svg">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+        </div>
+        <div class="faqs">
+            <div class="faqtext">
+                <h2>Looking for immediate answers?</h2>
+                <p>Check our help center for quick solutions to common questions.</p>
+            </div>
+            <div class="buttons">
+                <button class="bu">Visit Help Center</button>
+                <button class="bu">Course FAQs</button>
+            </div>
+        </div>
+        <footer>
+            <div class="container row">
+                <div class="logotext col-lg-6">
+                <div class="logo">
+                    <img src="Sources/Logo_without_background-removebg-preview.png" alt="logo" class="img-fluid">
+                </div>
+                <div class="footertext">
+                    <p>Empowering learners worldwide through high-quality, accessible education and expert-led mentorship programs.</p>
+                </div>
+            </div>
+            <div class="footerlinks col-lg-6">
+                <div class="company">
+                    <p>Company</p>
+                    <div class="companylinks">
+                        <a href="#About us">About us</a>
+                        <a href="#Careers">Careers</a>
+                        <a href="#Press">Press</a>
+                    </div>
+                </div>
+                <div class="resource">
+                    <p>Resources</p>
+                    <div class="resourcelinks">
+                        <a href="#Help Center">Help Center</a>
+                        <a href="#Course FAQs">Course FAQs</a>
+                        <a href="#Blog">Blog</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <div class="endlinks">
+                <p>© 2024 EduFlow Learning. All rights reserved.</p>
+                <div class="endlinks1">
+                    <a href="">Privacy Policy</a>
+                    <a href="">Terms of Service</a>
+                    <a href="">Help Center</a>
+                    <a href="">Contact Us</a>
+                </div>
+            </div>
+        </footer>
+        <!-- <script src="./Contact.js"></script> -->
+    <script src="main.js"></script>
+
+</body>
+</html>
